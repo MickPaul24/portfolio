@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      /* background-color: rgb(18, 16, 16); */
+    background: linear-gradient(30deg,rgb(0, 0, 0),rgb(0, 0, 0) ,black,rgb(255, 145, 0));
+    background-repeat: no-repeat;
+    padding: 20px;
+  /* background: linear-gradient(45deg, #00c6ff, #0072ff); */
+}
+    body::-webkit-scrollbar{
+      width: 0px;
+    }
+    .container{
+      display: inline-block;
+      text-align: center;
+      justify-content: center;
+      
+    }
+    .text{
+      margin-bottom: 2px;
+      margin-top: 0px;
+      color: rgb(235, 159, 45);
+      font-size: 20px;
+      letter-spacing: 1px;
+      font-family: monospace;
+      border-right: 5px solid;
+      /* border-radius: 9999px; */
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation-timeline: view();
+      animation: 
+                /* typing 3s , */
+                 typing 4s steps(18),
+                 cursor .4s step-end infinite alternate;
+    }
+    @keyframes cursor {
+      50%{
+        border-color: transparent;
+      }
+    }
+    @keyframes typing{
+      from{width: 0;}
+    }
+
+    @keyframes appear{
+      from{
+        opacity: 0;
+        /* scale:0.5; */
+      }
+      to{
+        opacity: 1;
+        scale: 1;
+      }
+    }
+    .text2{
+      animation: appear 11s;
+      
+    }
+    .hero{
+      border: orange solid 2px;
+      border-radius: 10px;
+      padding: 20px;
+      border-left-style: dashed;
+      border-top-style: dashed;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      animation: appear 11s;
+    }
+    .pic{
+      border-style: solid;
+      border-color:orange;
+      border-radius: 999px;
+      height: 300px;
+      width: 300px;
+      box-shadow: white 0px 0px 10px inset;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      /* overflow: hidden; */
+      justify-self: right;
+    }
+    .me{
+      height: 280px;
+      width: 280px;
+      border-radius: 999px;
+      background-image: url(me.png);
+    }
+    .do{
+      height: 280px;
+      width: 400px;
+      /* border: solid white 1px; */
+      border-radius: 10px;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+    }
+    .project{
+      display: inline-block;
+      color: rgb(0, 0, 0);
+      background-color: rgb(235, 159, 45);
+      font-size: 20px;
+      padding: 10px;
+      border: solid 1px black;
+      
+    }
+    .toolsHeading{
+      margin-bottom: 2px;
+      margin-top: 0px;
+      color: rgb(235, 159, 45);
+      font-size: 50px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      font-family: monospace;
+      border-right: 5px solid;
+      /* border-radius: 9999px; */
+      width: 50%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation-timeline: view();
+      animation: 
+                /* typing 3s , */
+                 typing 4s steps(8),
+                 cursor .4s step-end infinite alternate;
+    }
+
+
+
+    .carousel {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+.carousel-track {
+  display: flex;
+  animation: scroll 25s linear infinite;
+}
+.carousel-track.paused {
+  animation-play-state: paused;
+}
+.carousel img {
+  width: 260px;
+  height: 280px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.carousel img:hover {
+  transform: scale(1.05);
+}
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-80%); }
+}
+  </style>
+</head>
+<body>
+  <p style="color:white;font-size: 40px; font-family: Arial, Helvetica, sans-serif;text-align: center;">Hello, Hi 👋🙂</p>
+  <div class="container">
+    <p class="text">
+      My name is MickPaul Kuteesa L
+    </p>
+  </div>
+  <p class="text2"style="color:white; font-family: Arial, Helvetica, sans-serif; margin-top: 0px; font-size: 30px; font-weight:bold;">I'm a <u>Software Developer</u></p>
+  <div class="hero">
+    <div class="pic">
+      <div class="me"></div>
+    </div>
+    <div class="do">
+        <img scr="Icons/webHost.png" style="background-color: white; color: white;"/>
+        <p style="color:white;">Web Development</p><br>
+        <p style="color:white;">App Development</p><br>
+        <p style="color:white;">Web Hosting</p>
+    </div>
+    <button class="project">Got a project?</button>
+  </div>
+  <div class="tools">
+    <p class="toolsHeading">
+      Tools...
+    </p>
+  </div>
+
+  <div class="carousel">
+    <div class="carousel-track" id="carouselTrack">
+      <!-- Duplicate set of images for seamless scrolling -->
+       <p>Foofoofofof</p>
+      <img src="images/one.jpg" alt="1">
+      <img src="images/two.jpg" alt="2">
+      <img src="images/seven.jpg" alt="3">
+      <img src="images/four.jpg" alt="4">
+      <img src="images/five.jpg" alt="5">
+      <img src="images/six.jpg" alt="6">
+      <img src="images/seven.jpg" alt="7">
+      <img src="images/eight.jpg" alt="8">
+      <img src="images/nine.jpg" alt="9">
+      <img src="images/one.jpg" alt="10">
+      <img src="images/two.jpg" alt="11">
+      <img src="images/five.jpg" alt="12">
+
+      <!-- Repeat for continuous scroll -->
+      <img src="images/one.jpg" alt="1">
+      <img src="images/two.jpg" alt="2">
+      <img src="images/nine.jpg" alt="3">
+      <img src="images/four.jpg" alt="4">
+      <img src="images/five.jpg" alt="5">
+      <img src="images/six.jpg" alt="6">
+      <img src="images/seven.jpg" alt="7">
+      <img src="images/eight.jpg" alt="8">
+      <img src="images/nine.jpg" alt="9">
+      <img src="images/one.jpg" alt="10">
+      <img src="images/two.jpg" alt="11">
+      <img src="images/five.jpg" alt="12">
+
+      <!-- Repeat for continuous scroll -->
+      <img src="images/one.jpg" alt="1">
+      <img src="images/two.jpg" alt="2">
+      <img src="images/nine.jpg" alt="3">
+      <img src="images/four.jpg" alt="4">
+      <img src="images/five.jpg" alt="5">
+      <img src="images/six.jpg" alt="6">
+      <img src="images/seven.jpg" alt="7">
+      <img src="images/eight.jpg" alt="8">
+      <img src="images/nine.jpg" alt="9">
+      <img src="images/one.jpg" alt="10">
+      <img src="images/two.jpg" alt="11">
+      <img src="images/five.jpg" alt="12">
+    </div>
+  </div>
+</body>
+</html>
