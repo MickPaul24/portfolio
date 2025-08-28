@@ -3,166 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    body{
-      /* background-color: rgb(18, 16, 16); */
-    background: linear-gradient(45deg,rgb(0, 0, 0),rgb(0, 0, 0) ,black,rgb(255, 145, 0));
-    background-repeat: no-repeat;
-    /* padding: 20px; */
-  /* background: linear-gradient(45deg, #00c6ff, #0072ff); */
-}
-    body::-webkit-scrollbar{
-      width: 0px;
-    }
-    .container{
-      display: inline-block;
-      text-align: center;
-      justify-content: center;
-      
-    }
-    .text{
-      margin-bottom: 2px;
-      margin-top: 0px;
-      color: rgb(235, 159, 45);
-      font-size: 20px;
-      letter-spacing: 1px;
-      font-family: monospace;
-      border-right: 5px solid;
-      /* border-radius: 9999px; */
-      width: 100%;
-      white-space: nowrap;
-      overflow: hidden;
-      animation-timeline: view();
-      animation: 
-                /* typing 3s , */
-                 typing 4s steps(18),
-                 cursor .4s step-end infinite alternate;
-    }
-    @keyframes cursor {
-      50%{
-        border-color: transparent;
-      }
-    }
-    @keyframes typing{
-      from{width: 0;}
-    }
-
-    @keyframes appear{
-      from{
-        opacity: 0;
-        scale:0.5;
-      }
-      to{
-        opacity: 1;
-        scale: 1;
-      }
-    }
-    .text2{
-      animation: appear 2s;
-      
-    }
-    .hero{
-      border: orange solid 2px;
-      border-radius: 10px;
-      padding: 20px;
-      border-left-style: dashed;
-      border-top-style: dashed;
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-      animation: appear 2s;
-    }
-    .pic{
-      border-style: solid;
-      border-color:orange;
-      border-radius: 999px;
-      height: 300px;
-      width: 300px;
-      box-shadow: white 0px 0px 10px inset;
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      /* overflow: hidden; */
-      justify-self: right;
-    }
-    .me{
-      height: 280px;
-      width: 280px;
-      border-radius: 999px;
-      background-image: url(me.png);
-    }
-    .do{
-      height: 280px;
-      width: 400px;
-      /* border: solid white 1px; */
-      border-radius: 10px;
-      justify-content: center;
-      display: flex;
-      flex-direction: column;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    .project{
-      display: inline-block;
-      color: rgb(0, 0, 0);
-      background-color: rgb(235, 159, 45);
-      font-size: 20px;
-      padding: 10px;
-      border: solid 1px black;
-      
-    }
-    .toolsHeading{
-      margin-bottom: 2px;
-      margin-top: 0px;
-      color: rgb(235, 159, 45);
-      font-size: 50px;
-      font-weight: bold;
-      letter-spacing: 1px;
-      font-family: monospace;
-      border-right: 5px solid;
-      /* border-radius: 9999px; */
-      width: 50%;
-      white-space: nowrap;
-      overflow: hidden;
-      animation-timeline: view();
-      animation: 
-                /* typing 3s , */
-                 typing 4s steps(8),
-                 cursor .4s step-end infinite alternate;
-    }
-
-
-
-    .carousel {
-  overflow: hidden;
-  width: 100%;
-  position: relative;
-}
-.carousel-track {
-  display: flex;
-  animation: scroll 25s linear infinite;
-}
-.carousel-track.paused {
-  animation-play-state: paused;
-}
-.carousel img {
-  width: 260px;
-  height: 280px;
-  margin: 0 10px;
-  transition: transform 0.3s ease;
-  object-fit: cover;
-  border-radius: 10px;
-}
-.carousel img:hover {
-  transform: scale(1.05);
-}
-@keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-80%); }
-}
-  </style>
+  <title>MickPaul-Portfolio</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
   <p style="color:white;font-size: 40px; font-family: Arial, Helvetica, sans-serif;text-align: center;">Hello, Hi 👋🙂</p>
@@ -177,15 +19,23 @@
       <div class="me"></div>
     </div>
     <div class="do">
-        <img src="Icons/webDev.png" style="background-color: orange; width:50px;padding: 5px;border-radius: 999px;">
-        <p style="color:white;">Web Development</p><br>
+      <div class="do1">
+        <img src="Icons/webDev.png" style="background-color: orange; width:50px;padding: 5px;border-radius: 999px;margin-top: 100px;">
+        <p style="color:white;display: inline;"> Web Development</p>
+        </div>
+        <div class="do2">
         <img src="Icons/appDev.png" style="background-color: orange; width:50px;padding: 5px;border-radius: 999px;">
-        <p style="color:white;">App Development</p><br>
+        <p style="color:white; display: inline;">App Development</p>
+        </div>
+        <div class="do3">
         <img src="Icons/webHost.png" style="background-color: orange; width:50px; padding: 5px;border-radius: 999px;">
-        <p style="color:white;">Web Hosting</p>
+        <p style="color:white; display: inline;">Web Hosting</p>
+        </div>
     </div>
-    <button class="project">Got a project?</button>
-    <button class="project">Got a project?</button>
+    <div class="projectButtons">
+    <button class="projectButton1">Got a project?</button>
+    <button class="projectButton2">Got a project?</button>
+    </div>
   </div>
   <div class="tools">
     <p class="toolsHeading">
@@ -196,47 +46,46 @@
   <div class="carousel">
     <div class="carousel-track" id="carouselTrack">
       <!-- Duplicate set of images for seamless scrolling -->
-       <p>Foofoofofof</p>
-      <img src="images/one.jpg" alt="1">
-      <img src="images/two.jpg" alt="2">
-      <img src="images/seven.jpg" alt="3">
-      <img src="Icons/appDev.png" alt="4">
-      <img src="images/five.jpg" alt="5">
-      <img src="images/six.jpg" alt="6">
-      <img src="images/seven.jpg" alt="7">
-      <img src="images/eight.jpg" alt="8">
-      <img src="images/nine.jpg" alt="9">
-      <img src="images/one.jpg" alt="10">
-      <img src="images/two.jpg" alt="11">
-      <img src="images/five.jpg" alt="12">
+      <img src="images/html5.jpg" alt="1">
+      <img src="images/css.jpg" alt="2">
+      <img src="images/js.jpg" alt="3">
+      <img src="images/git.jpg" alt="4">
+      <img src="images/github.jpg" alt="5">
+      <img src="images/html5.jpg" alt="6">
+      <img src="images/css.jpg" alt="7">
+      <img src="images/js.jpg" alt="8">
+      <img src="images/git.jpg" alt="9">
+      <img src="images/github.jpg" alt="10">
+      <img src="images/html5.jpg" alt="11">
+      <img src="images/css.jpg" alt="12">
 
       <!-- Repeat for continuous scroll -->
-      <img src="images/one.jpg" alt="1">
-      <img src="images/two.jpg" alt="2">
-      <img src="images/nine.jpg" alt="3">
-      <img src="images/four.jpg" alt="4">
-      <img src="images/five.jpg" alt="5">
-      <img src="images/six.jpg" alt="6">
-      <img src="images/seven.jpg" alt="7">
-      <img src="images/eight.jpg" alt="8">
-      <img src="images/nine.jpg" alt="9">
-      <img src="images/one.jpg" alt="10">
-      <img src="images/two.jpg" alt="11">
-      <img src="images/five.jpg" alt="12">
+      <img src="images/html5.jpg" alt="1">
+      <img src="images/css.jpg" alt="2">
+      <img src="images/js.jpg" alt="3">
+      <img src="images/git.jpg" alt="4">
+      <img src="images/github.jpg" alt="5">
+      <img src="images/html5.jpg" alt="6">
+      <img src="images/css.jpg" alt="7">
+      <img src="images/js.jpg" alt="8">
+      <img src="images/git.jpg" alt="9">
+      <img src="images/github.jpg" alt="10">
+      <img src="images/html5.jpg" alt="11">
+      <img src="images/css.jpg" alt="12">
 
       <!-- Repeat for continuous scroll -->
-      <img src="images/one.jpg" alt="1">
-      <img src="images/two.jpg" alt="2">
-      <img src="images/nine.jpg" alt="3">
-      <img src="images/four.jpg" alt="4">
-      <img src="images/five.jpg" alt="5">
-      <img src="images/six.jpg" alt="6">
-      <img src="images/seven.jpg" alt="7">
-      <img src="images/eight.jpg" alt="8">
-      <img src="images/nine.jpg" alt="9">
-      <img src="images/one.jpg" alt="10">
-      <img src="images/two.jpg" alt="11">
-      <img src="images/five.jpg" alt="12">
+      <img src="images/html5.jpg" alt="1">
+      <img src="images/css.jpg" alt="2">
+      <img src="images/js.jpg" alt="3">
+      <img src="images/git.jpg" alt="4">
+      <img src="images/github.jpg" alt="5">
+      <img src="images/html5.jpg" alt="6">
+      <img src="images/css.jpg" alt="7">
+      <img src="images/js.jpg" alt="8">
+      <img src="images/git.jpg" alt="9">
+      <img src="images/github.jpg" alt="10">
+      <img src="images/html5.jpg" alt="11">
+      <img src="images/css.jpg" alt="12">
     </div>
   </div>
 </body>

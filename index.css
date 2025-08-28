@@ -1,0 +1,187 @@
+ body{
+      /* background-color: rgb(18, 16, 16); */
+    background: linear-gradient(45deg,rgb(0, 0, 0),rgb(0, 0, 0) ,black,rgb(255, 145, 0));
+    background-repeat: no-repeat;
+    /* padding: 20px; */
+  /* background: linear-gradient(45deg, #00c6ff, #0072ff); */
+}
+    body::-webkit-scrollbar{
+      width: 0px;
+    }
+    .container{
+      display: inline-block;
+      text-align: center;
+      justify-content: center;
+      
+    }
+    .text{
+      margin-bottom: 2px;
+      margin-top: 0px;
+      color: rgb(235, 159, 45);
+      font-size: 20px;
+      letter-spacing: 1px;
+      font-family: monospace;
+      border-right: 5px solid;
+      /* border-radius: 9999px; */
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation-timeline: view();
+      animation: 
+                /* typing 3s , */
+                 typing 4s steps(18),
+                 cursor .4s step-end infinite alternate;
+    }
+    @keyframes cursor {
+      50%{
+        border-color: transparent;
+      }
+    }
+    @keyframes typing{
+      from{width: 0;}
+    }
+
+    @keyframes appear{
+      from{
+        opacity: 0;
+        scale:0.5;
+      }
+      to{
+        opacity: 1;
+        scale: 1;
+      }
+    }
+    .text2{
+      animation: appear 2s;
+      
+    }
+    .hero{
+      border: orange solid 2px;
+      border-radius: 10px;
+      padding: 20px;
+      border-left-style: dashed;
+      border-top-style: dashed;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      animation: appear 2s;
+    }
+    .pic{
+      border-style: solid;
+      border-color:orange;
+      border-radius: 999px;
+      height: 300px;
+      width: 300px;
+      box-shadow: white 0px 0px 10px inset;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      /* overflow: hidden; */
+      justify-self: right;
+    }
+    .me{
+      height: 280px;
+      width: 280px;
+      border-radius: 999px;
+      background-image: url(me.png);
+    }
+    .do{
+      height: 280px;
+      width: 400px;
+      /* border: solid white 1px; */
+      border-radius: 10px;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      /* flex-direction: row; */
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .do1, .do2, .do3{
+      flex-direction: row;
+      margin-bottom: 30px;
+    }
+    .projectButtons{
+      margin: 20px;
+    }
+    .projectButton1{
+      display: inline-block;
+      color: rgb(0, 0, 0);
+      background-color: orange;
+      font-size: 20px;
+      padding: 10px;
+      border: solid 1px black;
+      
+    }
+    .projectButton2{
+      display: inline-block;
+      background-color: black;
+      border: orange solid 2px;
+      color: orange;
+      font-size: 20px;
+      padding: 10px;
+    }
+    .projectButton1:hover{
+      background-color: black;
+      border: orange solid 2px;
+      color: orange;
+    }
+    .projectButton2:hover{
+      background-color: orange;
+      border: orange solid 2px;
+      color: black;
+    }
+    .toolsHeading{
+      margin-bottom: 2px;
+      margin-top: 0px;
+      color: orange;
+      font-size: 50px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      font-family: monospace;
+      border-right: 5px solid;
+      /* border-radius: 9999px; */
+      width: 50%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation-timeline: view();
+      animation: 
+                /* typing 3s , */
+                 typing 4s steps(8),
+                 cursor .4s step-end infinite alternate;
+    }
+
+
+
+    .carousel {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  border: orange solid 2px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: black 0px 0px 10px inset;
+}
+.carousel-track {
+  display: flex;
+  animation: scroll 25s linear infinite;
+}
+.carousel-track.paused {
+  animation-play-state: paused;
+}
+.carousel img {
+  width: 100px;
+  /* height: 220px; */
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.carousel img:hover {
+  transform: scale(1.05);
+}
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-80%); }
+}
