@@ -99,39 +99,26 @@
       font-family: Arial, Helvetica, sans-serif;
     }
     .do1, .do2, .do3{
-      flex-direction: row;
-      margin-bottom: 30px;
+      /* flex-direction: row; */
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      text-align: center;
     }
-    .projectButtons{
-      margin: 20px;
-    }
-    .projectButton1{
-      display: inline-block;
-      color: rgb(0, 0, 0);
+    .do1Image,.do2Image,.do3Image{
+      margin-top: 5px;
       background-color: orange;
-      font-size: 20px;
-      padding: 10px;
-      border: solid 1px black;
-      
+      width:50px;padding: 5px;
+      border-radius: 999px;
+    }   
+    .do1Image{
+      margin-top: 25px;
     }
-    .projectButton2{
-      display: inline-block;
-      background-color: black;
-      border: orange solid 2px;
-      color: orange;
-      font-size: 20px;
-      padding: 10px;
-    }
-    .projectButton1:hover{
-      background-color: black;
-      border: orange solid 2px;
-      color: orange;
-    }
-    .projectButton2:hover{
-      background-color: orange;
-      border: orange solid 2px;
-      color: black;
-    }
+    .do1text,.do2text,.do3text{
+      margin-top: 0px;
+      font-weight: bold;
+      color:white;
+    }   
     .toolsHeading{
       margin-bottom: 2px;
       margin-top: 0px;
@@ -156,7 +143,7 @@
 
     .carousel {
   overflow: hidden;
-  width: 100%;
+  width: 98%;
   position: relative;
   border: orange solid 2px;
   padding: 10px;
@@ -177,6 +164,7 @@
   transition: transform 0.3s ease;
   object-fit: cover;
   border-radius: 10px;
+  box-shadow: 0px 0px 10px orange;
 }
 .carousel img:hover {
   transform: scale(1.05);
