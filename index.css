@@ -1,9 +1,7 @@
  body{
-      /* background-color: rgb(18, 16, 16); */
     background: linear-gradient(45deg,rgb(0, 0, 0),rgb(0, 0, 0) ,black,rgb(255, 145, 0));
     background-repeat: no-repeat;
-    /* padding: 20px; */
-  /* background: linear-gradient(45deg, #00c6ff, #0072ff); */
+    font-family: Arial, Helvetica, sans-serif;
 }
     body::-webkit-scrollbar{
       width: 0px;
@@ -97,6 +95,7 @@
       flex-direction: column;
       /* flex-direction: row; */
       font-family: Arial, Helvetica, sans-serif;
+      flex-wrap: wrap;
     }
     .do1, .do2, .do3{
       /* flex-direction: row; */
@@ -108,12 +107,13 @@
     .do1Image,.do2Image,.do3Image{
       margin-top: 5px;
       background-color: orange;
-      width:50px;padding: 5px;
-      border-radius: 999px;
+      width:50px;
+      padding: 5px;
+      border-radius: 9px;
     }   
-    .do1Image{
+    /* .do1Image{
       margin-top: 25px;
-    }
+    } */
     .do1text,.do2text,.do3text{
       margin-top: 0px;
       font-weight: bold;
