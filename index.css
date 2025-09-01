@@ -33,53 +33,6 @@
 
 
 
-
-    @keyframes moves{
-      from{
-        /* transform: translateX(4px); */
-        transform: translateY(0px);
-      }
-      to{
-        /* transform: translateX(0px); */
-        transform: translateY(2px);
-      }
-    }
-
-
-
-
-    @keyframes cursor {
-      50%{
-        border-color: transparent;
-      }
-    }
-    @keyframes typing{
-      from{width: 0;}
-    }
-
-    @keyframes appear{
-      from{
-        opacity: 0;
-        scale:0.5;
-      }
-      to{
-        opacity: 1;
-        scale: 1;
-      }
-    }
-        @keyframes appear2{
-      from{
-        opacity:0;
-        scale:0.5;
-        transform: translateX(200px);
-      }
-      to{
-        opacity: 1;
-        scale: 1;
-        transform: translateX(0px);
-      }
-      
-    }
     .carousel{
         animation:appear2 linear;
         animation-timeline: view();
@@ -167,7 +120,7 @@
       font-family: monospace;
       border-right: 5px solid;
       /* border-radius: 9999px; */
-      width: 50%;
+      width: 17%;
       white-space: nowrap;
       overflow: hidden;
       animation-timeline: view();
@@ -175,7 +128,10 @@
                 /* typing 3s , */
                  typing 4s steps(8),
                  cursor .4s step-end infinite alternate;
+                 
     }
+
+
 
 
 
@@ -209,7 +165,110 @@
 .carousel img:hover {
   transform: scale(1.05);
 }
-@keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-80%); }
+
+
+.projectsHeading{
+      margin-bottom: 2px;
+      margin-top: 0px;
+      color: orange;
+      font-size: 50px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      font-family: monospace;
+      border-right: 5px solid;
+      /* border-radius: 9999px; */
+      width: 23%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation-timeline: view();
+      animation: 
+                /* typing 3s , */
+                 typing 4s steps(8),
+                 cursor .4s step-end infinite alternate;
+    }
+.projectShowcase{
+  border-radius: 9px;
+  border: solid orange 2px;
+  margin: auto;
+  text-align: center;
+  /* display: flex; */
 }
+.projectShowcaseText{
+  color: white;
+  padding: 2px;
+  /* display: block; */
+  /* width: 100%; */
+}
+.projectContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projectOne{
+  border: dashed orange 1px;
+  border-radius: 9px;
+  margin: 5px;
+  width: 45%;
+  /* display: flex; */
+}
+.projectOneImage{
+  width: 40px;
+  border-radius: 999px;
+}
+.projectOneText{
+  color: black;
+  background-color: orange;
+  padding: 5px;
+  display: inline;
+  border: solid;
+  border-radius: 10px;
+}
+/*animation keyframes*/
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-80%); }
+    }
+
+    @keyframes moves{
+      from{
+        /* transform: translateX(4px); */
+        transform: translateY(0px);
+      }
+      to{
+        /* transform: translateX(0px); */
+        transform: translateY(2px);
+      }
+    }
+
+    @keyframes cursor {
+      50%{
+        border-color: transparent;
+      }
+    }
+    @keyframes typing{
+      from{width: 0;}
+    }
+
+    @keyframes appear{
+      from{
+        opacity: 0;
+        scale:0.5;
+      }
+      to{
+        opacity: 1;
+        scale: 1;
+      }
+    }
+    @keyframes appear2{
+      from{
+        opacity:0;
+        scale:0.5;
+        /* transform: translateX(200px); */
+      }
+      to{
+        opacity: 1;
+        scale: 1;
+        /* transform: translateX(0px); */
+      }
+      
+    }
