@@ -31,17 +31,13 @@
                  cursor .4s step-end infinite alternate;
     }
 
-
-
-    .carousel{
-        animation:appear2 linear;
-        animation-timeline: view();
-        animation-range: entry 0 cover 15%;
-        z-index: 0;
-      }
     .text2{
       animation: appear 2s;
-      
+      color:white; 
+      font-family: Arial, Helvetica, sans-serif; 
+      margin-top: 0px; 
+      font-size: 30px; 
+      font-weight:bold;
     }
     .hero{
       border: orange solid 2px;
@@ -132,7 +128,12 @@
     }
 
 
-
+  .carousel{
+      animation:appear2 linear;
+      animation-timeline: view();
+      animation-range: entry 0 cover 15%;
+      z-index: 0;
+    }
 
 
     .carousel {
@@ -208,7 +209,7 @@
   border: dashed orange 1px;
   border-radius: 9px;
   margin: 5px;
-  width: 45%;
+  width: 100%;
   /* display: flex; */
 }
 .projectOneImage{
@@ -223,6 +224,34 @@
   display: inline;
   border: solid;
   border-radius: 10px;
+}
+.aboutContainer{
+  display: flex;
+  margin: auto;
+  /* justify-content: center; */
+  text-align: center;
+  justify-content: space-evenly;
+}
+.projectNumber,.customerImpressions,.yearsOfExperience{
+  display: inline;
+  justify-content: center;
+  text-align: center;
+  border: orange 2px solid;
+  border-radius: 10px;
+  width: 30%;
+}
+.aboutTexts{
+  color:white;
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+.aboutTexts2{
+  color:white;
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
 }
 /*animation keyframes*/
     @keyframes scroll {
